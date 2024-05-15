@@ -1,1 +1,66 @@
-Hello, world
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neutron</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    
+    <div class="content">
+
+    </div>
+
+    <div class="footer">
+
+        <div class="today"><div class="sf-icon">􀆭</div>Сегодня</div>
+        <div class="menu"><div class="sf-icon">􀋲</div></div>
+        <div class="profile"></div>
+
+    </div>
+
+    <script type="module">
+
+        import * as assets from "./assets.js"
+
+        let css = ""
+        css += "@font-face {font-family: baton; src: url(" + assets.assets.batonTurboRegular +"); font-weight: 400; font-style: normal}"
+        css += "@font-face {font-family: baton; src: url(" + assets.assets.batonTurboBook +"); font-weight: 500; font-style: normal}"
+        css += "@font-face {font-family: baton; src: url(" + assets.assets.batonTurboMedium +"); font-weight: 600; font-style: normal}"
+        css += "@font-face {font-family: baton; src: url(" + assets.assets.batonTurboBold +"); font-weight: 700; font-style: normal}"
+        css += "@font-face {font-family: baton; src: url(" + assets.assets.batonTurboHeavy +"); font-weight: 800; font-style: normal}"
+                
+        css += "@font-face {font-family: baton; src: url(" + assets.assets.batonTurboRegularItalic +"); font-weight: 400; font-style: italic}"
+        css += "@font-face {font-family: baton; src: url(" + assets.assets.batonTurboBookItalic +"); font-weight: 500; font-style: italic}"
+        css += "@font-face {font-family: baton; src: url(" + assets.assets.batonTurboMediumItalic +"); font-weight: 600; font-style: italic}"
+        css += "@font-face {font-family: baton; src: url(" + assets.assets.batonTurboBoldItalic +"); font-weight: 700; font-style: italic}"
+        css += "@font-face {font-family: baton; src: url(" + assets.assets.batonTurboHeavyItalic +"); font-weight: 800; font-style: italic}"
+
+        css += "@font-face {font-family: sf; src: url(" + assets.assets.sf +");}"
+
+        css += "@font-face {font-family: tt; src: url(" + assets.assets.tt_extralight +"); font-weight: 200; font-style: normal}"
+        css += "@font-face {font-family: tt; src: url(" + assets.assets.tt_light +"); font-weight: 300; font-style: normal}"
+        css += "@font-face {font-family: tt; src: url(" + assets.assets.tt +"); font-weight: 400; font-style: normal}"
+        css += "@font-face {font-family: tt; src: url(" + assets.assets.tt_medium +"); font-weight: 500; font-style: normal}"
+        css += "@font-face {font-family: tt; src: url(" + assets.assets.tt_demibold +"); font-weight: 600; font-style: normal}"
+        css += "@font-face {font-family: tt; src: url(" + assets.assets.tt_bold +"); font-weight: 700; font-style: normal}"
+        css += "@font-face {font-family: tt; src: url(" + assets.assets.tt_extrabold +"); font-weight: 800; font-style: normal}"
+
+        css += "@font-face {font-family: tt; src: url(" + assets.assets.tt_extralight_italic +"); font-weight: 200; font-style: italic}"
+        css += "@font-face {font-family: tt; src: url(" + assets.assets.tt_light_italic +"); font-weight: 300; font-style: italic}"
+        css += "@font-face {font-family: tt; src: url(" + assets.assets.tt_italic +"); font-weight: 400; font-style: italic}"
+        css += "@font-face {font-family: tt; src: url(" + assets.assets.tt_medium_italic +"); font-weight: 500; font-style: italic}"
+        css += "@font-face {font-family: tt; src: url(" + assets.assets.tt_demibold_italic +"); font-weight: 600; font-style: italic}"
+        css += "@font-face {font-family: tt; src: url(" + assets.assets.tt_bold_italic +"); font-weight: 700; font-style: italic}"
+        css += "@font-face {font-family: tt; src: url(" + assets.assets.tt_extrabold_italic +"); font-weight: 800; font-style: italic}"
+
+
+        let cssBlock = document.createElement("style");
+        cssBlock.innerHTML = css;
+        document.head.appendChild(cssBlock);
+
+    </script>
+
+    
+</body>
+</html>
