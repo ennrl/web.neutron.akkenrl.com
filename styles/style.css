@@ -5,7 +5,6 @@ div.sf-icon {
 }
 .footer {
     position: absolute;
-    bottom: 10px;
     left: 10px;
     right: 10px;
     width: calc(100% - 20px);

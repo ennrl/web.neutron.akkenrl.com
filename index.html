@@ -64,7 +64,7 @@
 
     <script>
         setInterval(()=>{
-            document.querySelector(".footer .today").innerHTML = window.Telegram.WebApp.viewportHeight
+            document.querySelector(".footer").style.top = "calc(" + window.Telegram.WebApp.viewportHeight + "px - 60px)"
 
         }, 100)
     </script>
